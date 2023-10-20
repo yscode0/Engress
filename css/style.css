@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*---------- 共通部分 ----------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: YuGothic, sans-serif;
+  color: #1B224C;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 136px;
+  height: 27px;
+  line-height: 0;
+  margin-right: 30px;
+}
+.header__menu {
+  display: flex;
+  gap: 30px;
+}
+.header__contacts {
+  display: flex;
+}
+.header__contacts-btn {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
