@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/*---------- 共通部分 ----------*/
+/*----------
+共通部分
+----------*/
 html {
   font-size: 100%;
 }
@@ -32,10 +34,15 @@ img {
   margin: 0 auto;
 }
 
+/*----------
+ヘッダー
+----------*/
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 80px;
+  padding: 0 10px 0 15px;
+  background-color: #fff;
 }
 .header__logo {
   width: 136px;
@@ -47,10 +54,83 @@ img {
   display: flex;
   gap: 30px;
 }
+.header__menu-item {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
 .header__contacts {
   display: flex;
+  align-items: end;
+  margin-left: auto;
+}
+.header__contacts-text {
+  margin-right: 23px;
+  text-align: end;
+}
+.header__contacts-text-time {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.header__contacts-text-tel {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+.header__contacts-text-tel img {
+  margin-right: 5px;
 }
 .header__contacts-btn {
   display: flex;
   align-items: center;
+}
+.header__contacts-btn--orange {
+  width: 142px;
+  line-height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #F5A623;
+}
+.header__contacts-btn--orange a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header__contacts-btn--blue {
+  width: 137px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #1B224C;
+}
+.header__contacts-btn--blue a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-visual {
+  text-align: center;
+  background: url(../img/fv.jpg), lightgray 50%/cover no-repeat;
+  backdrop-filter: blur(15px);
+}
+.main-visual__title {
+  color: #FFF;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 37px;
+}
+.main-visual__text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
