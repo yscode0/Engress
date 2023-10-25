@@ -26,3 +26,13 @@ img {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.section {
+  padding-top: 63px;
+  &-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+}
