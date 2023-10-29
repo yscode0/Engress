@@ -20,8 +20,17 @@ a {
   display: block;
 }
 
-ul {
+ul, ol, dl {
   list-style: none;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 img {
@@ -243,11 +252,19 @@ img {
   z-index: -1;
 }
 
+.feature {
+  padding-bottom: 39px;
+}
 .feature .section-title {
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 .feature-box {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px;
+}
+.feature-box__detail {
+  width: 55.556%;
 }
 .feature-box__detail-tag {
   display: inline-block;
@@ -261,10 +278,289 @@ img {
   margin-bottom: 37px;
 }
 .feature-box__detail-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 66px;
   color: #1B224C;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+.feature-box:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+.feature-box:nth-of-type(3) {
+  margin-bottom: 93px;
+}
+.feature-box:nth-of-type(3) .feature-box__detail-title {
+  height: 36px;
+}
+.feature-box__img {
+  width: 38.889%;
+}
+
+.rate-plan-box {
+  background-image: url(../img/price.jpg);
+  height: 217px;
+  border: 1px solid #707070;
+  text-align: center;
+  padding-top: 61px;
+}
+.rate-plan-box__title {
+  color: #FFF;
   font-family: YuGothic;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 39px */
+  line-height: 1;
+  margin-bottom: 27px;
+}
+.rate-plan-box__btn {
+  display: inline-block;
+  color: #FFF;
+  padding: 17px 44px;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+}
+
+.case-study {
+  background-color: #1B224C;
+  padding-bottom: 60px;
+}
+.case-study .section-title {
+  color: #FFF;
+  margin-bottom: 129px;
+}
+.case-study-list {
+  display: flex;
+  justify-content: space-between;
+}
+.case-study-list-item {
+  width: 100%;
+  max-width: 280px;
+}
+.case-study-list-item__text {
+  width: 100%;
+  max-width: 280px;
+  color: #FFF;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.case-study-list-item__img {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 171px;
+  background: #FFF;
+  margin-bottom: 16px;
+}
+.case-study-list-item__img img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.case-study-list-item__profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+.case-study-list-item__profile-occupation {
+  background-color: #FFF;
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 42px 8px 10px;
+  margin: 0 8px 10px 0;
+}
+.case-study-list-item__profile-name {
+  background-color: #FFF;
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 10px;
+  width: 100%;
+  max-width: 172px;
+  margin-bottom: 10px;
+}
+.case-study-list-item__profile-result {
+  background-color: #FFF;
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.usage-flow {
+  margin-bottom: 59px;
+}
+.usage-flow .section-title {
+  margin-bottom: 46px;
+}
+.usage-flow-list-item {
+  display: flex;
+  min-height: 64px;
+  margin-bottom: 8px;
+}
+.usage-flow-list-item__num {
+  background-color: #F5A623;
+  color: #FFF;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 64px;
+  width: 64px;
+  text-align: center;
+}
+.usage-flow-list-item__title {
+  position: relative;
+  background-color: #F8F8F8;
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 64px;
+  padding-left: 20px;
+  width: 100%;
+  max-width: 215px;
+}
+.usage-flow-list-item__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 29px;
+  background-color: #C3C3C3;
+}
+.usage-flow-list-item__text {
+  background-color: #F8F8F8;
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 64px;
+  padding-left: 50px;
+  width: 100%;
+  max-width: 620px;
+}
+
+.faq {
+  margin-bottom: 90.5px;
+}
+.faq .section-title {
+  margin-bottom: 48px;
+}
+
+.faq-list-item__q {
+  position: relative;
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 22px 50px 22px 0;
+  border-top: 1px solid #1B224C;
+}
+.faq-list-item__q::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  width: 25px;
+  height: 3px;
+  background-color: #1B224C;
+  transition: 0.4s;
+}
+.faq-list-item__q::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 3px;
+  background-color: #1B224C;
+  transition: 0.4s;
+}
+.faq-list-item__a {
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 19px 20px;
+  background: #F8F8F8;
+  margin-bottom: 15.5px;
+}
+.faq-list-item:last-of-type {
+  border-bottom: 1px solid #1B224C;
+}
+
+details[open] .faq-list-item__q::before {
+  transform: rotate(0);
+}
+
+details[open] .faq-list-item__q::after {
+  opacity: 0;
+}
+
+.blog-notice {
+  display: flex;
+}
+.blog-notice-title {
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.blog-list-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 31px;
+}
+.blog-list-item:last-of-type {
+  margin-bottom: 0;
+}
+.blog-list-item__img {
+  position: relative;
+}
+.blog-list-item__img-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1B224C;
+  border: 1px solid #707070;
+  color: #FFF;
+  font-family: YuGothic;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 5px 9px;
+}
+.blog-list-item__text-link {
+  color: #1B224C;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=style.css.map */

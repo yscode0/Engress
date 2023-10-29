@@ -15,8 +15,15 @@ a {
   text-decoration: none;
   display: block;
 }
-ul {
+ul, ol, dl {
   list-style: none;
+}
+summary {
+	list-style: none;
+	cursor: pointer;
+}
+summary::-webkit-details-marker {
+	display: none;
 }
 img {
   max-width: 100%;
