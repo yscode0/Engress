@@ -1,0 +1,150 @@
+/*----------
+フッター
+----------*/
+
+.footer {
+  &-visual {
+    background-image: url(../img/cta.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 259.403px;
+    text-align: center;
+    padding-top: 70px;
+    &__title {
+      color: #FFF;
+      font-family: YuGothic;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: calc(48px / 32px);
+      margin-bottom: 10px;
+    }
+    &-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__btn {
+        min-width: 280px;
+        max-width: 480px;
+        color: #FFF;
+        font-family: YuGothic;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        background-color: #F5A623;
+        border-radius: 25px;
+        border: 1px solid #F5A623;
+        padding: 17px;
+        margin-bottom: 17px;
+      }
+      &__contact {
+        color: #FFF;
+        font-family: YuGothic;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        text-decoration-line: underline;
+      }
+    }
+  }
+  &-contact-tel {
+    display: grid;
+    grid-template-columns: 1fr 298px 1fr;
+    align-items: flex-end;
+    padding: 23px 0 24px;
+    &__text {
+      text-align: right;
+      font-family: YuGothic;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    &__link {
+      text-align: center;
+      font-family: YuGothic;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    &__time {
+      font-family: YuGothic;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &-nav {
+    background-color: #1B224C;
+    color: #FFF;
+    padding: 34px 0 69px;
+    &-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-list {
+      display: flex;
+      padding-top: 8px;
+      &__item {
+        border-right: 1px solid #fff;
+        height: 23px;
+        margin-right: 21px;
+        padding-right: 21px;
+        &:first-of-type {
+          padding-left: 4px;
+        }
+        &:last-of-type {
+          border-right: none;
+          margin-right: 0;
+          padding-right: 0;
+          }
+        & a {
+          font-family: YuGothic;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1;
+        }
+      }
+    }
+    &-logo__img {
+      background-color: #FFF;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 197px;
+      height: 58px;
+      margin-bottom: 27px;
+      padding: 13px 19px 14px;
+    }
+    &-logo__tel {
+      text-align: right;
+      font-family: YuGothic;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 13px;
+      & img {
+        margin-right: 5px;
+      }
+    }
+    &-logo__time {
+      text-align: right;
+      font-family: YuGothic;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+  &-copyright {
+    text-align: right;
+    font-family: YuGothic;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    padding: 11px 0;
+  }
+}
