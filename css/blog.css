@@ -349,7 +349,7 @@ img {
 ----------*/
 .sub-main-visual {
   text-align: center;
-  background-image: url(../img/plan.jpg);
+  background-image: url(../img/blog.jpg);
   background-size: cover;
   background-position: center top;
   height: 221px;
@@ -364,123 +364,110 @@ img {
   margin-bottom: 37px;
 }
 
-.fee-structure {
+.archive {
   padding-top: 58px;
 }
-.fee-structure-title {
+.archive-title {
   color: #1B224C;
   text-align: center;
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 60.18px;
+  margin-bottom: 60px;
 }
-.fee-structure-box {
+.archive-list__item {
+  margin-bottom: 60px;
+}
+.archive-list__item:last-of-type {
+  margin-bottom: 115px;
+}
+.archive-list__item-link {
+  display: flex;
+  gap: 50px;
+}
+.archive-list__item-img {
+  width: 100%;
+  max-width: 240px;
+  height: 179px;
+  position: relative;
+}
+.archive-list__item-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.archive-list__item-img-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1B224C;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 12px 8px 13px;
+}
+.archive-list__item-detail-date {
+  color: #1B224C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.archive-list__item-detail-title {
+  color: #1B224C;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.archive-list__item-detail-text {
+  color: #1B224C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.pagination {
+  margin-bottom: 45px;
+}
+.pagination-list {
+  display: flex;
+  justify-content: center;
+}
+.pagination-list__num {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 36px;
-  margin-bottom: 45.82px;
-}
-.fee-structure-box__text {
-  color: #FFF;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 90px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #1B224C;
-  background: #1B224C;
-  width: 100%;
-  max-width: 280px;
-}
-.fee-structure__text {
   color: #1B224C;
   font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 97px;
-}
-
-.rate-table {
-  margin-bottom: 35px;
-}
-.rate-table-title {
-  color: #1B224C;
-  text-align: center;
-  font-size: 32px;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 70px;
 }
-.rate-table-list {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 7px;
-}
-.rate-table-list__item {
-  width: 25%;
-  text-align: center;
-}
-.rate-table-list__item-title {
-  background: #1B224C;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
-  padding: 22px 10px;
-}
-.rate-table-list__item-title--orange {
-  background: #F5A623;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
-  padding: 22px 10px 20px;
-}
-.rate-table-list__item-title--orange .recommendation {
+.pagination-list__num a {
   display: block;
-  margin-bottom: 22px;
+  width: 100%;
+  line-height: 48px;
+  text-align: center;
 }
-.rate-table-list__item-box {
-  border-right: 0.5px solid #1B224C;
-  border-bottom: 0.5px solid #1B224C;
-  border-left: 0.5px solid #1B224C;
-  height: 416px;
-  padding: 0 16px;
+.pagination-list__num + .pagination-list__num {
+  margin-left: 19px;
 }
-.rate-table-list__item-fee {
-  color: #1B224C;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 1;
-  padding-top: 29px;
-  margin-bottom: 15px;
+.pagination-list__num--current {
+  background: #1B224C;
+  color: #FFF;
 }
-.rate-table-list__item-fee--orange {
-  color: #F5A623;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 1;
-  padding-top: 29px;
-  margin-bottom: 15px;
+.pagination-list__num:nth-of-type(4) {
+  position: relative;
+  margin-left: 88px;
 }
-.rate-table-list__item-text {
-  color: #1B224C;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 46px;
-}
-
-.plan-list__item {
-  color: #1B224C;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 15px;
-}
-.plan-list__item::before {
-  content: url(../img/check.svg);
-  margin-right: 11px;
-}/*# sourceMappingURL=plan.css.map */
+.pagination-list__num:nth-of-type(4)::before {
+  content: "…";
+  position: absolute;
+  left: -52px;
+}/*# sourceMappingURL=blog.css.map */
