@@ -3,52 +3,13 @@
 @use "_header.scss";
 @use "_footer.scss";
 
-.main-visual {
-  text-align: center;
-  background-image: url(../img/fv.jpg);
-  background-size: cover;
-  background-position: center top;
-  backdrop-filter: blur(15px);
-  height: 476px;
-  padding-top: 116px;
-  &__title {
-    color: #FFF;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
-    font-size: 48px;
+.section {
+  padding-top: 63px;
+  &-title {
+    font-size: 36px;
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 37px;
-  }
-  &__text {
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: calc(27px / 18px);
-    margin-bottom: 37px;
-  }
-  &-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__btn {
-      min-width: 260px;
-      max-width: 460px;
-      color: #FFF;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1;
-      background-color: #F5A623;
-      border-radius: 31px;
-      padding: 22px;
-      margin-bottom: 22px;
-    }
-    &__contact {
-      color: #FFF;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1;
-      text-decoration-line: underline;
-    }  
+    text-align: center;
   }
 }
 

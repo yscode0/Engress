@@ -1,0 +1,486 @@
+@charset "UTF-8";
+/*----------
+共通部分
+----------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: YuGothic, sans-serif;
+  color: #1B224C;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, dl {
+  list-style: none;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*----------
+ヘッダー
+----------*/
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 10px 0 15px;
+  background-color: #fff;
+}
+.header__logo {
+  width: 136px;
+  height: 27px;
+  line-height: 0;
+  margin-right: 30px;
+}
+.header__menu {
+  display: flex;
+  gap: 30px;
+}
+.header__menu-item {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.header__contacts {
+  display: flex;
+  align-items: end;
+  margin-left: auto;
+}
+.header__contacts-text {
+  margin-right: 23px;
+  text-align: end;
+}
+.header__contacts-text-time {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.header__contacts-text-tel {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+.header__contacts-text-tel img {
+  margin-right: 5px;
+}
+.header__contacts-btn {
+  display: flex;
+  align-items: center;
+}
+.header__contacts-btn--orange {
+  width: 142px;
+  line-height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #F5A623;
+}
+.header__contacts-btn--orange a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header__contacts-btn--blue {
+  width: 137px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #1B224C;
+}
+.header__contacts-btn--blue a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/*----------
+メインビジュアル
+----------*/
+.main-visual {
+  text-align: center;
+  background-image: url(../img/fv.jpg);
+  background-size: cover;
+  background-position: center top;
+  backdrop-filter: blur(15px);
+  height: 476px;
+  padding-top: 116px;
+}
+.main-visual__title {
+  color: #FFF;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 37px;
+}
+.main-visual__text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 37px;
+}
+.main-visual-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-visual-flex__btn {
+  min-width: 260px;
+  max-width: 460px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #F5A623;
+  border-radius: 31px;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+.main-visual-flex__contact {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration-line: underline;
+}
+
+/*----------
+サブメインビジュアル
+----------*/
+.sub-main-visual {
+  text-align: center;
+  background-image: url(../img/plan.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 221px;
+  padding-top: 95px;
+}
+.sub-main-visual__title {
+  color: #FFF;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 37px;
+}
+
+/*----------
+パンくずリスト
+----------*/
+.breadcrumb {
+  background: #F8F8F8;
+  line-height: 50px;
+}
+.breadcrumb-list {
+  display: flex;
+  color: #1B224C;
+  font-size: 12px;
+  font-weight: 500;
+}
+.breadcrumb-list__item--link {
+  text-decoration: underline;
+}
+.breadcrumb-list__item:nth-child(n+2)::before {
+  content: ">";
+  margin: 0 5px;
+}
+
+/*----------
+フッター
+----------*/
+.footer-visual {
+  background-image: url(../img/cta.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 259.403px;
+  text-align: center;
+  padding-top: 70px;
+}
+.footer-visual__title {
+  color: #FFF;
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.footer-visual-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-visual-flex__btn {
+  min-width: 280px;
+  max-width: 480px;
+  color: #FFF;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #F5A623;
+  border-radius: 25px;
+  border: 1px solid #F5A623;
+  padding: 17px;
+  margin-bottom: 17px;
+}
+.footer-visual-flex__contact {
+  color: #FFF;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration-line: underline;
+}
+.footer-contact-tel {
+  display: grid;
+  grid-template-columns: 1fr 298px 1fr;
+  align-items: flex-end;
+  padding: 23px 0 24px;
+}
+.footer-contact-tel__text {
+  text-align: right;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+.footer-contact-tel__link {
+  text-align: center;
+  font-family: YuGothic;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+.footer-contact-tel__time {
+  font-family: YuGothic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer-nav {
+  background-color: #1B224C;
+  color: #FFF;
+  padding: 34px 0 69px;
+}
+.footer-nav-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav-list {
+  display: flex;
+  padding-top: 8px;
+}
+.footer-nav-list__item {
+  border-right: 1px solid #fff;
+  height: 23px;
+  margin-right: 21px;
+  padding-right: 21px;
+}
+.footer-nav-list__item:first-of-type {
+  padding-left: 4px;
+}
+.footer-nav-list__item:last-of-type {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.footer-nav-list__item a {
+  font-family: YuGothic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+.footer-nav-logo__img {
+  background-color: #FFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 197px;
+  height: 58px;
+  margin-bottom: 27px;
+  padding: 13px 19px 14px;
+}
+.footer-nav-logo__tel {
+  text-align: right;
+  font-family: YuGothic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 13px;
+}
+.footer-nav-logo__tel img {
+  margin-right: 5px;
+}
+.footer-nav-logo__time {
+  text-align: right;
+  font-family: YuGothic;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+}
+.footer-copyright {
+  text-align: right;
+  font-family: YuGothic;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  padding: 11px 0;
+}
+
+.fee-structure {
+  padding-top: 58px;
+}
+.fee-structure-title {
+  color: #1B224C;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 60.18px;
+}
+.fee-structure-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 45.82px;
+}
+.fee-structure-box__text {
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 90px;
+  border: 1px solid #1B224C;
+  background: #1B224C;
+  width: 100%;
+  max-width: 280px;
+}
+.fee-structure__text {
+  color: #1B224C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 97px;
+}
+
+.rate-table {
+  margin-bottom: 35px;
+}
+.rate-table-title {
+  color: #1B224C;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 70px;
+}
+.rate-table-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 7px;
+}
+.rate-table-list__item {
+  width: 25%;
+  text-align: center;
+}
+.rate-table-list__item-title {
+  background: #1B224C;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 22px 10px;
+}
+.rate-table-list__item-title--orange {
+  background: #F5A623;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 22px 10px 20px;
+}
+.rate-table-list__item-title--orange .recommendation {
+  display: block;
+  margin-bottom: 22px;
+}
+.rate-table-list__item-box {
+  border-right: 0.5px solid #1B224C;
+  border-bottom: 0.5px solid #1B224C;
+  border-left: 0.5px solid #1B224C;
+  height: 416px;
+  padding: 0 16px;
+}
+.rate-table-list__item-fee {
+  color: #1B224C;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 29px;
+  margin-bottom: 15px;
+}
+.rate-table-list__item-fee--orange {
+  color: #F5A623;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 29px;
+  margin-bottom: 15px;
+}
+.rate-table-list__item-text {
+  color: #1B224C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 46px;
+}
+
+.plan-list__item {
+  color: #1B224C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.plan-list__item::before {
+  content: url(../img/check.svg);
+  margin-right: 11px;
+}/*# sourceMappingURL=plan.css.map */

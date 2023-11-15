@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@use "_common.scss";
+@use "_header.scss";
+@use "_footer.scss";
+
+.fee-structure {
+  padding-top: 58px;
+  &-title {
+    color: #1B224C;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 60.18px;
+  } 
+  &-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 45.82px;
+    &__text {
+      color: #FFF;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 90px;
+      border: 1px solid #1B224C;
+      background:#1B224C;
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+  &__text {
+    color:#1B224C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 97px;
+  }
+}
+
+.rate-table {
+  margin-bottom: 35px;
+  &-title {
+    color: #1B224C;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 70px;
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 7px;
+    &__item {
+      width: calc(100% / 4);
+      text-align: center;
+      &-title {
+        background: #1B224C;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 22px 10px;
+        &--orange {
+          background: #F5A623;
+          color: #FFF;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1;
+          padding: 22px 10px 20px;
+          .recommendation {
+            display: block;
+            margin-bottom: 22px;
+          }  
+        }
+      }
+      &-box {
+        border-right: 0.5px solid #1B224C;
+        border-bottom: 0.5px solid #1B224C;
+        border-left: 0.5px solid #1B224C;
+        height: 416px;
+        padding: 0 16px;
+      }
+      &-fee {
+        color: #1B224C;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        padding-top: 29px;
+        margin-bottom: 15px;
+        &--orange {
+          color: #F5A623;
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 1;
+          padding-top: 29px;
+          margin-bottom: 15px;
+        }
+      }
+      &-text {
+        color: #1B224C;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 46px;
+      }
+    }
+  }
+}
+.plan-list__item {
+  color: #1B224C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+  &::before {
+    content: url(../img/check.svg);
+    margin-right: 11px;
+  }
+}
