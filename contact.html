@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ・資料請求 | Engress</title>
+  <meta name="description" content="お問い合わせ・資料請求 | 日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    
+    <!-- ヘッダーロゴ -->
+    <div class="header__logo">
+      <a href="index.html"><img src="img/Engress-logo.svg" alt="logo"></a>
+    </div>
+
+    <!-- ヘッダーナビ -->
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="index.html">ホーム</a></li>
+        <li class="header__menu-item"><a href="news.html">お知らせ</a></li>
+        <li class="header__menu-item"><a href="blog.html">ブログ</a></li>
+        <li class="header__menu-item"><a href="plan.html">コース・料金</a></li>
+      </ul>
+    </nav>  
+    
+    <!-- ヘッダーコンタクトボタン -->
+    <div class="header__contacts">
+      <div class="header__contacts-text">
+        <p class="header__contacts-text-time">平日08:00〜20:00</p>
+        <p class="header__contacts-text-tel"><img src="img/juwaki.svg" alt="">0123-456-7890</p>
+      </div>
+      <ul class="header__contacts-btn">
+        <li class="header__contacts-btn--orange"><a href="contact.html">資料請求</a></li>
+        <li class="header__contacts-btn--blue"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- サブメインビジュアル -->
+  <div class="sub-main-visual">
+    <h1 class="sub-main-visual__title">お問い合わせ・資料請求</h1>
+  </div>
+  <div class="breadcrumb">
+    <ul class="breadcrumb-list wrapper">
+      <li class="breadcrumb-list__item">
+        <a class="breadcrumb-list__item--link" href="index.html">ホーム</a>
+      </li>
+      <li class="breadcrumb-list__item">お問い合わせ</li>
+    </ul>
+  </div>
+
+  <main>
+
+    <section class="contact-content contact-content-wrapper">
+      <h2 class="contact-content__title">弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</h2>
+      <form class="contact-form" action="">
+        <ul class="contact-form-list">
+          <li class="contact-form-list__item">
+            <label class="contact-form-list__item-label" for="company-name">会社名</label>
+            <input id="company-name" class="contact-form-list__item-input" type="text" name="company-name" placeholder="Engress">
+          </li>
+
+          <li class="contact-form-list__item">
+            <label class="contact-form-list__item-label" for="name">氏名</label>
+            <input id="name" class="contact-form-list__item-input" type="text" name="name" placeholder="田中　太郎">
+          </li>
+
+          <li class="contact-form-list__item">
+            <label class="contact-form-list__item-label" for="email">メールアドレス</label>
+            <input id="email" class="contact-form-list__item-input" type="email" name="email" placeholder="example@example.com">
+          </li>
+
+          <li class="contact-form-list__item">
+            <label class="contact-form-list__item-label" for="tel">電話番号</label>
+            <input id="tel" class="contact-form-list__item-input" type="tel" inputmode="numeric" name="tel" placeholder="01-2345-6789">
+          </li>
+
+          <li class="contact-form-list__item">
+            <label class="contact-form-list__item-label" for="content">お問い合わせの種類を選択してください（資料請求の方は資料請求を選択ください）</label>
+            <ul class="radio-list">
+              <li class="radio-list__item">
+                <input type="radio" name="content" id="negotiation" value="商談のご相談" checked>
+                <label class="radio-list__item-label" for="negotiation">商談のご相談</label>
+              </li>
+              <li class="radio-list__item">
+                <input type="radio" name="content" id="service" value="サービスに関するお問い合わせ">
+                <label class="radio-list__item-label" for="service">サービスに関するお問い合わせ</label>
+              </li>
+              <li class="radio-list__item">
+                <input type="radio" name="content" id="document-request" value="資料請求">
+                <label class="radio-list__item-label" for="document-request">資料請求</label>
+              </li>
+              <li class="radio-list__item">
+                <input type="radio" name="content" id="other" value="その他">
+                <label class="radio-list__item-label" for="other">その他</label>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contact-form-list__item">
+            <label class="contact-form-list__item-label" for="detail">お問い合わせ内容</label>
+            <textarea name="detail" id="detail" cols="30" rows="10" placeholder="入力して下さい"></textarea>
+          </li>
+
+          <li class="contact-form-list__item">
+            <p class="contact-form-list__item-text"><a href="">プライバシーポリシー</a>に同意の上、送信ください。</p>
+            <input type="checkbox" name="consent" id="consent" required>
+            <label class="contact-form-list__item-label--check" for="consent">プライバシーポリシーに同意する</label>
+          </li>
+        </ul>
+
+        <div class="contact-form__btn">
+          <input class="contact-form__btn-submit" type="submit" value="送信する">
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+
+    <div class="footer-nav">
+      <div class="footer-nav-flex wrapper">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list__item"><a href="index.html">ホーム</a></li>
+          <li class="footer-nav-list__item"><a href="news.html">お知らせ</a></li>
+          <li class="footer-nav-list__item"><a href="blog.html">ブログ</a></li>
+          <li class="footer-nav-list__item"><a href="plan.html">コース・料金</a></li>
+        </ul>
+        <div class="footer-nav-logo">
+          <div class="footer-nav-logo__img">
+            <img src="img/Engress-footer-logo.svg" alt="">
+          </div>
+          <p class="footer-nav-logo__tel"><img src="img/juwaki-2.svg" alt="">0123-456-7890</p>
+          <p class="footer-nav-logo__time">平日08:00~20:00</p>
+        </div>  
+      </div>
+    </div>
+
+    <p class="footer-copyright wrapper"><small>&copy; 2020 Engress.</small></p>
+    
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
