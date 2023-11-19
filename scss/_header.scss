@@ -2,16 +2,26 @@
 ヘッダー
 ----------*/
 .header {
+  position: fixed;
+  inset: 0;
   display: flex;
   align-items: center;
   height: 80px;
   padding: 0 10px 0 15px;
   background-color: #fff;
+  z-index: 2;
   &__logo {
     width: 136px;
     height: 27px;
     line-height: 0;
     margin-right: 30px;
+    & a {
+      display: block;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
   &__menu {
     display: flex;
@@ -20,6 +30,16 @@
       font-size: 1rem;
       font-weight: 700;
       line-height: 1;
+      & a {
+        color: #1B224C;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
     }
   }
   &__contacts {
@@ -60,6 +80,10 @@
           color: #fff;
           font-size: 14px;
           font-weight: 700;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
       &--blue {
@@ -73,9 +97,16 @@
           color: #fff;
           font-size: 14px;
           font-weight: 700;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }
+  }
+  & + .breadcrumb {
+    margin-top: 80px;
   }
 }
 
@@ -90,6 +121,7 @@
   backdrop-filter: blur(15px);
   height: 476px;
   padding-top: 116px;
+  margin-top: 80px;
   &__title {
     color: #FFF;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
@@ -117,9 +149,15 @@
       font-weight: 700;
       line-height: 1;
       background-color: #F5A623;
+      border: 1px solid #F5A623;
       border-radius: 31px;
-      padding: 22px;
+      padding: 21px;
       margin-bottom: 22px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 20px 0 #00000027;
+      }
     }
     &__contact {
       color: #FFF;
@@ -127,6 +165,11 @@
       font-weight: 500;
       line-height: 1;
       text-decoration-line: underline;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.7;
+        text-decoration-line: none;
+      }
     }  
   }
 }
@@ -145,6 +188,11 @@
     &__item {
       &--link {
         text-decoration: underline;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+          text-decoration-line: none;
+        }
       }
       &:nth-child(n+2)::before {
         content: ">";

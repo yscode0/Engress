@@ -13,6 +13,7 @@
   background-position: center;
   height: 221px;
   padding-top: 95px;
+  margin-top: 80px;
   &__title {
     color: #FFF;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
@@ -90,6 +91,10 @@
         display: flex;
         gap: 52px;
         padding: 21px 0 20px;
+        &:hover > .news-archive-list__item-title {
+          text-decoration-line: none;
+          opacity: 0.7;
+        }
       }
       &-date {
         color: #1B224C;
@@ -103,6 +108,7 @@
         font-weight: 500;
         line-height: calc(24px / 16px);
         text-decoration-line: underline;
+        transition: 0.3s;
       }
     }
   }
@@ -208,6 +214,11 @@
     font-weight: 500;
     line-height: calc(24px / 16px);
     text-decoration-line: underline;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+      text-decoration-line: none;
+    }
   }
 
 }

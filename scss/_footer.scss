@@ -36,6 +36,11 @@
         border: 1px solid #F5A623;
         padding: 17px;
         margin-bottom: 17px;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0 5px 20px 0 #00000027;
+        }
       }
       &__contact {
         color: #FFF;
@@ -44,6 +49,11 @@
         font-weight: 500;
         line-height: 1;
         text-decoration-line: underline;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+          text-decoration-line: none;
+        }
       }
     }
   }
@@ -60,11 +70,16 @@
       line-height: 1;
     }
     &__link {
+      color: #1B224C;
       text-align: center;
       font-family: YuGothic;
       font-size: 36px;
       font-weight: 700;
       line-height: 1;
+      transition: 0.3s;
+      &:hover {
+        color: #F5A623;
+      }
     }
     &__time {
       font-family: YuGothic;
@@ -99,11 +114,16 @@
           padding-right: 0;
           }
         & a {
+          color: #F8F8F8;
           font-family: YuGothic;
           font-size: 16px;
           font-style: normal;
           font-weight: 700;
           line-height: 1;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }
